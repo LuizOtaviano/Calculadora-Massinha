@@ -156,3 +156,22 @@ footer {
   text-align: center; /* centralizado */
   color: #333; /* texto escuro para contraste */
 }
+
+@media (max-width: 600px) {
+
+  main > div {
+    padding: 15px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  #btn-calcular {
+    min-width: 85%;
+    margin: 20px;
+  }
+
+  #resultado {
+    margin-top: 10px;
+    font-size: 35px;
+  }
+}
