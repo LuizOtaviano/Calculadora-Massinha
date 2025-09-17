@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 15px;
+}
+
+header > h1 {
+  margin-bottom: 15px;
+}
+
+body {
+  background-color: #fff1a8;
+  height: 100vh;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  font-variation-settings: "wdth" 100;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > div {
+  background-color: #fff8e7;
+  height: 85%;
+  width: 85%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px black;
+}
+
+/* Container do slider */
+.slide-dados {
+  display: flex;
+  flex-direction: column; /* label em cima, slider embaixo */
+  gap: 8px; /* espaço entre label, slider e valor */
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Container do slider + valor em linha */
+.slide-dados .slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre slider e valor */
+}
+
+/* Slider */
+.slide-dados input[type="range"] {
+  -webkit-appearance: none; /* remove estilo padrão do Chrome */
+  flex: 1; /* ocupa todo espaço restante */
+  min-width: 0; /* previne que o slider encolha */
+  height: 8px;
+  background: #8fd9a8; /* barra do slider */
+  border-radius: 5px;
+  accent-color: #ff6b6b; /* parte preenchida no Chrome */
+  cursor: pointer;
+}
+
+/* Thumb do slider */
+.slide-dados input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.slide-dados input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra preenchida no Firefox */
+.slide-dados input[type="range"]::-moz-range-progress {
+  background-color: #ff6b6b;
+}
+
+/* Track no Firefox */
+.slide-dados input[type="range"]::-moz-range-track {
+  background-color: #8fd9a8;
+}
+
+/* Slider ocupa todo espaço restante */
+.input-slider {
+  flex: 1; /* ocupa espaço disponível */
+  min-width: 0; /* previne encolhimento */
+}
+
+/* Valor ao lado do slider */
+.valor-slider {
+  font-size: 25px;
+  min-width: 40px; /* evita que números grandes quebrem layout */
+  text-align: right;
+}
+
+#btn-calcular {
+  min-width: 400px;
+  background-color: #ff6b6b; /* cor principal (igual ao thumb) */
+  color: #fff; /* texto branco */
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px; /* bordas arredondadas */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* sombra suave */
+  transition: all 0.2s ease-in-out; /* animação suave */
+  display: block;
+  margin: 40px auto; /* centraliza horizontalmente */
+}
+
+/* efeito ao passar o mouse */
+#btn-calcular:hover {
+  background-color: #e65a5a; /* tom mais escuro do vermelho */
+  transform: scale(1.05); /* leve aumento */
+}
+
+/* efeito ao clicar */
+#btn-calcular:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  color: white;
+  padding: 15px;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 40px; /* bem grande */
+  font-weight: bold;
+  text-align: center; /* centralizado */
+  color: #333; /* texto escuro para contraste */
+}

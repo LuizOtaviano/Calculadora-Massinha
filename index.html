@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Massa de Modelar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Calculadora de Massinha Caseira</h1>
+    <h2>Descubra os valores necessários para realizar sua receita</h2>
+  </header>
+  <main>
+    <div>
+
+      <div class="slide-dados">
+        <label>Farinha de Trigo:</label>
+        <div class="slider-wrapper">
+          <input type="range" class="input-slider" min="0.5" max="10" step="0.5" value="1" data-item="farinha">
+          <span class="valor-slider">1</span>
+          <span class="material-symbols-outlined">local_cafe</span>
+        </div>
+      </div>
+
+      <div class="slide-dados">
+        <label>Sal:</label>
+        <div class="slider-wrapper">
+          <input type="range" class="input-slider" min="0.5" max="10" step="0.5" value="1" data-item="sal">
+          <span class="valor-slider">1</span>
+          <span class="material-symbols-outlined">local_cafe</span>
+        </div>
+      </div>
+
+      <div class="slide-dados">
+        <label>Água:</label>
+        <div class="slider-wrapper">
+          <input type="range" class="input-slider" min="0.5" max="10" step="0.5" value="1" data-item="agua">
+          <span class="valor-slider">1</span>
+          <span class="material-symbols-outlined">local_cafe</span>
+        </div>
+      </div>
+
+      <div class="slide-dados">
+        <label>Óleo:</label>
+        <div class="slider-wrapper">
+          <input type="range" class="input-slider" min="0.5" max="10" step="0.5" value="1" data-item="oleo">
+          <span class="valor-slider">1</span>
+          <span class="material-symbols-outlined">soup_kitchen</span>
+        </div>
+      </div>
+
+      <div class="slide-dados">
+        <label>Corante:</label>
+        <div class="slider-wrapper">
+          <input type="range" class="input-slider" min="0.5" max="10" step="0.5" value="1" data-item="corante">
+          <span class="valor-slider">1</span>
+          <span class="material-symbols-outlined">water_drop</span>
+        </div>
+      </div>
+
+      <button id="btn-calcular">Calcular</button>
+
+      <p id="resultado"></p>
+    </div>
+  </main>
+  <footer>
+    <p>Isabela Santana Karina <br>Marcelo Pereira</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
