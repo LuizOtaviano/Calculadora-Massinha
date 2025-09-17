@@ -158,7 +158,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-
   main > div {
     padding: 15px;
     height: auto;
@@ -172,6 +171,6 @@ footer {
 
   #resultado {
     margin-top: 10px;
-    font-size: 35px;
+    font-size: 30px;
   }
 }
